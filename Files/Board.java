@@ -24,7 +24,8 @@ public class Board {
                     System.out.println(player.getName() + " was bitten by a snake! at "+nextLocation);
                     Snakes obj = snakes.get(nextLocation);
                     nextLocation = obj.getEndPoint();
-                } else if (ladders.containsKey(nextLocation)) {
+                } 
+                else if (ladders.containsKey(nextLocation)) {
                     System.out.println(player.getName() + " climbed a Ladder!");
                     Ladders obj = ladders.get(nextLocation);
                     nextLocation = obj.getEndPoint();
