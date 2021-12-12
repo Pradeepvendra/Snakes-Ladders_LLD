@@ -1,4 +1,4 @@
-class Jumper {
+public class Jumper {
     private int startPoint;
     private int endPoint;
 
