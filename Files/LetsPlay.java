@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class LetsPlay {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Welcome to Snakes and Ladders Game!");
