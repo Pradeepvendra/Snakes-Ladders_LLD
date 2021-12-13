@@ -1,4 +1,4 @@
-class Board {
+public class Board {
     private Dice dice;
     private Queue<Player> allPlayer;
     private HashMap<Integer, Snakes> snakes;
