@@ -3,8 +3,21 @@ public class Dice {
     Dice(int noOfDice) {
         this.noOfDice = noOfDice;
     }
-    // rolling the dice 
+    int getSum(){
+        int sum=0;
+        for(int i=0;i<noOfDice;i++){
+            sum=sum+ (new Random().nextInt(6) + 1);}
+        return sum;}
     public int rollDice() {
-        return ((int) (Math.random() * (6 * noOfDice - 1 * noOfDice))) + 1;
+        if(getSum()==(noOfDice*6) & noOfDice>1){
+            return 0;
+        }
+        else if(getSum()<(noOfDice*6) & noOfDice>1){
+            return (getSum()%6)+1;
+        }
+        else{
+            return  getSum();
+
+        }
     }
 }
